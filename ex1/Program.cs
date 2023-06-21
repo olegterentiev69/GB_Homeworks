@@ -1,8 +1,9 @@
 ﻿Console.Clear();
 int X = 0, Y = 0;
 InitCoordinatesByUser(ref X, ref Y); // Вызов метода с передачей параметров по ссылке (ref)
-PrintQuarterByCoords(X, Y); // Вызов метода с передачей параметров по значению
-// Определяем функцию, выполняющую ввод значений координат
+PrintQuarterByCoords(X, Y); // Вызов метода с передачей параметров по значению.
+
+// Определяем функцию, выполняющую ввод значений координат.
 
 static void InitCoordinatesByUser(ref int x, ref int y)
 {
@@ -21,7 +22,8 @@ static void InitCoordinatesByUser(ref int x, ref int y)
 
 }
 // Определяем функцию, принимающую два аргумента (координаты точки x и y)
-// и выводящую в консоль номер четверти плоскости, в которой находится эта точка
+// и выводящую в консоль номер четверти плоскости, в которой находится эта точка.
+
 static void PrintQuarterByCoords(int x, int y)
 {
     if (x > 0 && y > 0)

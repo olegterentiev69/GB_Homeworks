@@ -14,4 +14,4 @@
  double z2 = double.Parse(Console.ReadLine() ?? "");
 
 double distance = Math.Sqrt((x2-x1)*(x2-x1)+(y1-y2)*(y2-y1)+(z2 - z1)*(z2-z1));
-Console.WriteLine($"Расстояние между двумя точками в 3-D пространстве равно {distance}");
+Console.WriteLine($"Расстояние между двумя точками в 3-D пространстве равно {distance:f2}");

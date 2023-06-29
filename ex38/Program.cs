@@ -1,6 +1,4 @@
 ﻿
-
-
 Console.Write("Введите количество элементов массива: ");
 int a = Convert.ToInt32(Console.ReadLine());
 int minValue = GetNumberFromUser("Введите минимальное значение массива: ", "Ошибка ввода!");
@@ -14,7 +12,7 @@ void mas(int a)
 
     for (int i = 0; i < a; i++)
     {
-        array[i] = (maxValue-1) - rand.Next(minValue) + rand.NextDouble(); 
+        array[i] = (maxValue - 1) - rand.Next(minValue) + rand.NextDouble();
         //rand.NextDouble(); цифры после запятой
         Console.Write($"{array[i]:f2}; ");
     }

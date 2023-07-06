@@ -6,12 +6,13 @@ Console.Write("Введите количество строк -> ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов -> ");
 int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("---------------------------");
 double[,] numbers = new double[m, n];
-FillArrayRandomNumbers(numbers);
+ArrayRandomNumbers(numbers);
 PrintArray(numbers);
 
 
-void FillArrayRandomNumbers(double[,] array)
+void ArrayRandomNumbers(double[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {

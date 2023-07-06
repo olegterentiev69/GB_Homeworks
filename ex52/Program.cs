@@ -1,5 +1,6 @@
-﻿//Задайте двумерный массив размером m×n, 
-//заполненный случайными целыми числами
+﻿//Задайте двумерный массив из целых чисел. 
+//Найдите среднее арифметическое элементов в каждом столбце.
+
 Console.Clear();
 Console.Write("Введите количество строк массива: ");
 int rows = int.Parse(Console.ReadLine() ?? "");
@@ -7,7 +8,7 @@ Console.Write("Введите количество столбцов массив
 int columns = int.Parse(Console.ReadLine() ?? "");
 int minValue = GetNumberFromUser("Введите минимальное значение массива: ", "Ошибка ввода!");
 int maxValue = GetNumberFromUser("Введите максимальное значение массива: ", "Ошибка ввода!");
-
+Console.WriteLine("---------------------------");
 int[,] array = GetArray(rows, columns, minValue, maxValue);
 PrintArray(array);
 
@@ -53,6 +54,6 @@ for (int j = 0; j < array.GetLength(1); j++)
     {
         sum += array[i, j];
     }
-    Console.Write($"{sum / array.GetLength(0)} ");
+    Console.Write($"{(sum / array.GetLength(0)):f2} ");
 }
 Console.ReadLine();

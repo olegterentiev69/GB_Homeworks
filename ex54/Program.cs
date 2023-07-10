@@ -30,7 +30,7 @@ void FillArray(int[,] matr)
     }
 }
 //
-void uporyadok(int[,] array)
+void arrange(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -48,7 +48,7 @@ void uporyadok(int[,] array)
         }
         }
         }
-uporyadok(matrix);
+arrange(matrix);
 Console.WriteLine("Отсортированный массив: ->");
 Console.WriteLine("-------------------------------------------");
 PrintArray(matrix);

@@ -1,9 +1,13 @@
-﻿Console.Clear();
+﻿//Задайте двумерный массив. Напишите программу, которая упорядочит
+// по убыванию элементы каждой строки двумерного массива.
+
+Console.Clear();
 int[,] matrix = new int[5, 6];
 FillArray(matrix);
 Console.WriteLine();
+Console.WriteLine("-------------------------------------------");
 PrintArray(matrix);
-
+Console.WriteLine("-------------------------------------------");
 void PrintArray(int[,] matr)
 {
     for (int i = 0; i < matr.GetLength(0); i++)
@@ -45,6 +49,7 @@ void uporyadok(int[,] array)
         }
         }
 uporyadok(matrix);
-Console.WriteLine("Отсортированный массив: ");
+Console.WriteLine("Отсортированный массив: ->");
+Console.WriteLine("-------------------------------------------");
 PrintArray(matrix);
-
+Console.WriteLine("-------------------------------------------");

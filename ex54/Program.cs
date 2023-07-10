@@ -37,17 +37,17 @@ void arrange(int[,] array)
         for (int j = 0; j < array.GetLength(1); j++)
         {
             for (int k = 0; k < array.GetLength(1) - 1; k++)
-{
-    if (array[i, k] < array[i, k + 1])
-    {
-        int temp = array[i, k + 1];
-        array[i, k + 1] = array[i, k];
-        array[i, k] = temp;
+            {
+                if (array[i, k] < array[i, k + 1])
+                {
+                    int temp = array[i, k + 1];
+                    array[i, k + 1] = array[i, k];
+                    array[i, k] = temp;
+                }
+            }
+        }
     }
 }
-        }
-        }
-        }
 arrange(matrix);
 Console.WriteLine("Отсортированный массив: ->");
 Console.WriteLine("-------------------------------------------");
